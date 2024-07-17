@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.header {
+  text-align: center;
+}
+
+.login-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  /* text-align: center; */
+}
+
+.login-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.fa-eye-slash {
+  margin-right: 5px;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container input {
+  width: calc(100% - 30px);
+  display: inline-block;
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-container p {
+  margin: 10px 0;
+}
+
+.login-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.remember {
+  display: flex;
+}
+
+#remember-me {
+  width: 15px;
+  height: 15px;
+  margin: 10px 5px;
+}
+
+.remember-text {
+  width: 200px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+#footer {
+  display: flex;
+  margin: 15px 0px;
+}
+
+.signup {
+  margin: 10px 0;
+  float: right;
+  padding: 0px 5px;
+}
+
+.or {
+  padding-left: 80px;
+}

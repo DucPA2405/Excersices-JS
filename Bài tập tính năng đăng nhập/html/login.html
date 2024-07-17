@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2 class="header">Login</h2>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <div class="password-container">
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
+        <span class="toggle-password" onclick="togglePasswordVisibility()"
+          ><i class="fa fa-eye-slash" style="font-size: 20px"></i
+        ></span>
+      </div>
+      <label class="remember">
+        <input type="checkbox" id="remember-me" />
+        <p class="remember-text">Remember me</p>
+      </label>
+      <br />
+      <button onclick="login()">Login</button>
+      <div id="footer">
+        <a class="signup" href="#" onclick="forgotPassword()"
+          >Forgot password?</a
+        >
+        <p class="or">or</p>
+        <a href="../html/register.html" class="signup">SignUp</a>
+      </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>
