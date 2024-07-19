@@ -4,10 +4,7 @@ function deepClone(obj) {
     return obj;
   }
 
-
-  // Tạo một bản sao mới của đối tượng
   let clone = {};
-
 
   // Lặp qua tất cả các thuộc tính của đối tượng
   for (let key in obj) {
@@ -23,18 +20,13 @@ function deepClone(obj) {
     }
   }
 
-
-  // Trả về bản sao mới
   return clone;
 }
-
 
 const obj1 = { a: 1, b: 2, c: { d: 3 } };
 const obj2 = deepClone(obj1);
 
-
 obj2.c.d = 4;
 
-
-console.log(obj1); // { a: 1, b: 2, c: { d: 3 } }
-console.log(obj2); // { a: 1, b: 2, c: { d: 4 } }
+console.log(obj1);
+console.log(obj2);
